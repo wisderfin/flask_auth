@@ -1,0 +1,80 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&family=Noto+Sans+Lao+Looped:wght@100..900&display=swap" rel="stylesheet">
+
+<body>
+    <form action="/auth/login" method="post">
+        <div class="container">
+            <h1>Login</h1>
+            <label>mail</label>
+            <input type="text" name="email">
+            <label>password</label>
+            <input type="password" name="password">
+            <button class="next">Next</button>
+            <button class="login"><a href="/registration">Registration</a></button>
+        </div>
+    </form>
+</body>
+
+<style>
+body {
+	height: 100vh;
+	background-image: radial-gradient(#6622f1, #29b937);
+}
+
+.container {
+	margin: 0 auto;
+	margin-top: 22.5vh;
+	border-radius: 3vh;
+	border: solid #fff 0.5vh;
+	width: 60vh;
+	height: 43vh;
+	background-color: #0003;
+}
+h1 {
+	text-align: center;
+	font-family: "Noto Sans Khojki", sans-serif;
+	font-size: 5vh;
+
+	color: azure;
+}
+input[type="text"], input[type="password"]{
+	width: 90%;
+	height: 10%;
+	margin-left: 4.5%;
+	border: solid #fff .5vh;
+	border-radius: 3vh;
+	background-color: #0003;
+	color: azure;
+}
+label{
+	color: azure;
+	margin-left: 8%;
+	font-size: 2vh;
+}
+.next{
+	float: right;
+	width: 20vh;
+	height: 6vh;
+	margin-right: 2vh;
+	margin-top: 2vh;
+	border: solid #fff .5vh;
+	border-radius: 3vh;
+	background-color: #0003;
+	color: azure;
+}
+.login{
+	height: 6vh;
+	float: right;
+	margin-top: 2vh;
+	margin-right: 2vh;
+	border: none;
+	border-radius: 3vh;
+	background-color: #0000;
+	color: azure;
+}
+a {
+    text-decoration: none;
+	color: azure;
+}
+</style>
